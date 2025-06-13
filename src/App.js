@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import Componente1 from './Componente1';
+
+
+function getDate(date){
+
+  return date.toLocaleDateString()+" "+date.toLocaleTimeString();
+}
 
 function App() {
+
+  let nome = "lorenzo";
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h1>super applicazione di {nome} </h1>
+
+      <Componente1>pippo</Componente1>
+
+      {
+        new Date().toLocaleDateString()+" "+new Date().toLocaleTimeString() 
+      }
+
+      <h2>
+        <h3><Clock timezone = "2" country = "ITALY"></Clock></h3>
+      </h2>
+    
     </div>
   );
 }
