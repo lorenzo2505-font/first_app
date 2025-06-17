@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import Componente1 from './Componente1';
 
+import Clock from "./Clock";
+
+import Persona from './persona';
+
+
 
 function getDate(date){
 
@@ -25,9 +30,12 @@ function App() {
       <h2>
         <h3><Clock timezone = "2" country = "ITALY"></Clock></h3>
       </h2>
+
+      <Persona></Persona>
     
     </div>
   );
 }
 
 export default App;
+//
