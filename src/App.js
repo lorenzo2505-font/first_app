@@ -6,6 +6,8 @@ import Clock from "./Clock";
 
 import Persona from './persona';
 
+import {anagrafica} from "./dati/dati";
+
 
 
 function getDate(date){
