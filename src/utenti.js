@@ -46,12 +46,3 @@ const u3 = {
 };
 
 const utenti = [u1, u2, u3];
-
-
-const pres_utenti = () => {
-
-    
-
-
-}
-
